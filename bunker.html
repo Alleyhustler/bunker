@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bunker</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('images/asf.png') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Ensure image covers the entire viewport */
+            display: flex;
+            flex-direction: column; /* Stack title and subtitle vertically */
+            justify-content: center;
+            align-items: center;
+            transform: scale(0.8); /* Start zoomed in */
+            transition: transform 1s ease-in-out; /* Smooth zoom-out */
+        }
+
+        /* Zoom out when page loads */
+        .zoom-out {
+            transform: scale(1); /* Return to normal size */
+        }
+
+        /* Container for title and subtitle images */
+        .image-container {
+            text-align: center; /* Center images horizontally */
+        }
+
+        /* Styling for the title image */
+        .title-image {
+            max-width: 100%; /* Adjust size to fit within the viewport */
+            height: auto;
+            margin-bottom: 20px; /* Space between title and subtitle */
+        }
+
+        /* Styling for the subtitle image */
+        .subtitle-image {
+            max-width: 100%; /* Adjust size to fit within the viewport */
+            height: 300px;
+        }
+        
+        /* Social media icon styling */
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 15px;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #d41aff;
+        }
+
+        /* Container for additional images */
+            .additional-images {
+            display: flex; /* Align images horizontally */
+            justify-content: center;
+            gap: 20px; /* Space between the images */
+        }
+
+        .additional-images img {
+            max-width: 85%; /* Adjust size to fit within the viewport */
+            height:fit-content
+        }
+    </style>
+
+    <script>
+        // Wait for page to load, then trigger zoom-out effect
+        window.onload = function() {
+            document.body.classList.add('zoom-out');
+        }
+    </script>
+</head>
+<body>
+    <div class="social-icons">
+        <!-- Twitter Icon -->
+        <a href="https://x.com/bunker_solana" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <!-- Telegram Icon -->
+        <a href="https://t.me/+VfjwyfnfS91iYzZk" target="_blank">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+    </div>
+    <!-- Container for title and subtitle images -->
+    <div class="image-container">
+        <!-- Title image -->
+        <img src="images/escape (1).gif" alt="Bunker Title" class="title-image">
+        
+        <!-- Subtitle image -->
+        <img src="images/escape.png" alt="Bunker Subtitle" class="subtitle-image">
+    </div>
+    <!-- Container for additional images -->
+    <div class="additional-images">
+        <!-- Additional image 1 -->
+        <img src="images/escape (1).png" alt="Additional Image 1">
+        
+        <!-- Additional image 2 -->
+        <img src="images/escape (2).png" alt="Additional Image 2">
+    </div>
+</body>
+</html>
